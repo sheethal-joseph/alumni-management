@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <title></title>
+	
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/calender.css" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">	
+	
+	<link href="https://fonts.googleapis.com/css?family=Signika+Negative:400,300,600,700" rel="stylesheet" type="text/css">
+	
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    
+    <style type="text/css">
+	
+		body
+		{
+			overflow: auto;
+		}
+		
+		.othertop
+		{
+			margin-top:5px;
+		}
+		#show_show
+		{
+			display: none; 
+		}
+		.valid {
+		color: green;
+		}
+
+		.valid:before {
+
+			left: -35px;
+			content: "✔";
+		}
+
+		.invalid {
+			color: red;
+		}
+
+		.invalid:before {
+			left: -35px;
+			content: "✖";
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="main-wrapper">
+		<header id="navigation">
+			<div class="navbar" role="banner">	
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						
+						<a class="navbar-brand" href="index.html">
+							<img class="main-logo img-responsive" src="images/others/rsz_img1.png" alt="">
+						</a>
+					</div> 
+					<nav id="mainmenu" class="navbar-left collapse navbar-collapse"> 
+						<a class="secondary-logo" href="index.html">
+							<img class="img-responsive" src="images/others/rsz_img1.png" alt="">
+						</a>
+						<ul class="nav navbar-nav">                       
+							<li class="dropdown"><a href="home.html" class="dropdown-toggle" data-toggle="dropdown">Home </a>
+							</li>
+							<li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="about_us.html">About us</a></li>
+									<li><a href="contact_us.html">Contact us</a></li>
+									<li><a href="listing.html">Alumini benifits</a></li>
+									<li><a href="404.html">Meeting reports</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="events_show.html">Upcoming events <span class="badge">Events</span></a></li>
+									<li><a href="view news.html">Latest news<span class="badge">News</span></a></li>
+								</ul>
+							</li>
+							<li class="dropdown mega-dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Mega Menu <span class="caret"></span></a>
+								<div class="dropdown-menu mega-menu">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-sm-3">
+												<div class="post medium-post">
+													<div class="entry-header">
+														<div class="entry-thumbnail">
+															<a href="news-details.html"><img class="img-responsive" src="images/gallery/C8U9z98UwAAGxt6.jpg" alt="" /></a>
+														</div>
+													</div>
+													<div class="post-content">								
+														<div class="entry-meta">
+															<ul class="list-inline">
+																<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Dec 10, 2017 </a></li>
+
+															</ul>
+														</div>
+														<h2 class="entry-title">
+															<a href="news-details.html">Life at NSBM,
+															NSBM green University is renowned for its world-class academic offerings.</a>
+														</h2>
+													</div>
+												</div><!--/post--> 
+											</div>
+											<div class="col-sm-3">
+												<div class="post medium-post">
+													<div class="entry-header">
+														<div class="entry-thumbnail">
+															<a href="news-details.html"><img class="img-responsive" src="images/gallery/217056.jpg" alt="" /></a>
+														</div>
+													</div>
+													<div class="post-content">								
+														<div class="entry-meta">
+															<ul class="list-inline">
+																<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Dec 18, 2017 </a></li>
+
+															</ul>
+														</div>
+														<h2 class="entry-title">
+															<a href="news-details.html">National School of Business Management, (NSBM) Graduation ceremony</a>
+														</h2>
+													</div>
+												</div><!--/post--> 
+											</div>
+											<div class="col-sm-3">
+												<div class="post medium-post">
+													<div class="entry-header">
+														<div class="entry-thumbnail">
+															<a href="news-details.html"><img class="img-responsive" src="images/gallery/398638.jpg" alt="" /></a>
+														</div>
+													</div>
+													<div class="post-content">								
+														<div class="entry-meta">
+															<ul class="list-inline">
+																<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Dec 19, 2017 </a></li>
+
+															</ul>
+														</div>
+														<h2 class="entry-title">
+															<a href="news-details.html">NSBM students decorated the campus premises for a deco competition celebrating Christmas 2017</a>
+														</h2>
+													</div>
+												</div><!--/post--> 
+											</div>
+											<div class="col-sm-3">
+												<div class="post medium-post">
+													<div class="entry-header">
+														<div class="entry-thumbnail">
+															<a href="news-details.html"><img class="img-responsive" src="images/gallery/383610.jpg" alt="" /></a>
+														</div>
+													</div>
+													<div class="post-content">								
+														<div class="entry-meta">
+															<ul class="list-inline">
+																<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Dec 13, 2017 </a></li>
+
+															</ul>
+														</div>
+														<h2 class="entry-title">
+															<a href="news-details.html">Victoria University students at NSBM gets a warm welcome</a>
+														</h2>
+													</div>
+												</div><!--/post--> 
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li><a href="about_us.html">About us</a></li>
+							<li><a href="contact_us.html">Contact us</a></li>
+							<li><a href="#">Achivements</a></li>
+							<li><a href="events_show.html">Events</a></li>
+						</ul> 					
+					</nav>
+					
+					<div class="searchNlogin">
+						<ul>
+							<li class="search-icon"><i class="fa fa-search"></i></li>
+							<li><a href="#"><i class="fa fa-user"></i></a></li>
+							<li class="dropdown user-panel"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><a><i class="fa fa-sign-in" aria-hidden="true"></i></a></a>
+								<div class="dropdown-menu top-user-section">
+									<div class="top-user-form">
+										<form id="top-login" role="form">
+											<div class="input-group" id="top-login-username">
+												<span class="input-group-addon"><img src="images/others/user-icon.png" alt="" /></span>
+												<input type="text" class="form-control" placeholder="Username" required="">
+											</div>
+											<div class="input-group" id="top-login-password">
+												<span class="input-group-addon"><img src="images/others/password-icon.png" alt="" /></span>
+												<input type="password" class="form-control" placeholder="Password" required="">
+											</div>
+											<div>
+												<p class="reset-user">Forgot <a href="#">Password/Username?</a></p>
+												<button class="btn btn-danger" type="submit">Login</button>
+											</div>
+										</form>
+									</div>
+									<div class="create-account">
+										<a href="#">Create a New Account</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="search">
+							<form role="form">
+								<input type="text" class="search-form" autocomplete="off" placeholder="Type & Press Enter">
+							</form>
+						</div> <!--/.search--> 
+					</div><!--.searchNlogin -->
+				</div>	
+			</div>
+		</header><!--/#navigation--> 
+		
+		<div class="container-fluid">			
+				<div class="section">
+				<div class="row" style="margin-top: 2%;">	
+					<div class="col-md-1"></div>			
+					<div class="col-sm-10">
+						<div id="site-content" class="site-content">
+							<div class="middle-content">
+								
+								<div class="section health-section">
+								
+								   <div class="container-fluid">
+									<div class="row">
+									<div class="col-md-10 ">
+									<form class="form-horizontal">
+									<fieldset>
+
+									<!-- Form Name -->
+									<legend>User profile form requirement</legend>
+
+									<!-- Text input-->
+
+
+
+
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Name (Full name)">Name (Full name)</label>  
+									  <div class="col-md-4">
+									 <div class="input-group">
+										   <div class="input-group-addon">
+											<i class="fa fa-user">
+											</i>
+										   </div>
+										   <input id="Name (Full name)" name="Name (Full name)" type="text" placeholder="Name (Full name)" class="form-control input-md" style="border-bottom:2px solid #F37173;" required>
+										  </div>
+
+
+									  </div>
+
+
+									</div>
+
+									<!-- File Button --> 
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Upload photo">Upload photo</label>
+									  <div class="col-md-4">
+										<input id="Upload photo" name="Upload photo" class="input-file" type="file" onchange="readURL(this);move();" required >
+										<div class="progress" id="myProgress" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%; margin-top: 2%;">
+												<div class="progress-bar progress-bar-success" id="myBar">
+													100% Complete (success)
+											 </div>
+										</div>
+								
+									  </div>
+									</div>
+									
+									
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Username (User name)">Username</label>  
+									  <div class="col-md-4">
+									 <div class="input-group">
+										   <div class="input-group-addon">
+											<i class="fa fa-user">
+											</i>
+										   </div>
+										   <input id="Usrename (user name)" name="Username (User name)" type="text" placeholder="Username" class="form-control input-md" style="border-bottom:2px solid #F37173;" required>
+										  </div>
+										</div>
+									</div>
+									
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Username (User name)">Password</label>  
+									  <div class="col-md-4">
+									 <div class="input-group">
+										   <div class="input-group-addon">
+											<i class="fa fa-unlock-alt">
+											</i>
+										   </div>
+										   <input id="pass" name="Password (Password)" type="password" placeholder="Password" class="form-control input-md" style="border-bottom:2px solid #F37173; margin-bottom: 15px;" required>
+										         <div id="show_show" style="margin-top: 2%;">
+													   <div class="card">
+														<div class="card-body">
+														  <h4 class="card-title text-center text-danger">Password Must Require</h4>
+														  <p class="card-text">
+
+															<p id="lowercase_letter"  class="include">Must Include A<b> Lowercase</b> Letter</p>
+															<p id="uppercase_letter" class="include">Must Include A<b> Uppercase</b> Letter</p>
+															<p id="number"  class="include">Must Include A <b> Number</b></p>
+															<p id="input_length"  class="include">Must Include Minimum <b> 8 characters</b></p>
+														  </p>
+														</div>
+													  </div>
+													</div>
+										  </div>
+										</div>
+									</div>
+									
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Password (Password)">Confirm Password</label>  
+									  <div class="col-md-4">
+									 <div class="input-group">
+										   <div class="input-group-addon">
+											<i class="fa fa-unlock-alt">
+											</i>
+										   </div>
+										   <input id="cpasswod" name="cpasswod" type="password" placeholder="Confirm password" class="form-control input-md" style="border-bottom:2px solid #F37173;" onKeyUp="check()" required>
+										   <div id="write_write" style="color:green"></div>
+										  </div>
+										</div>
+									</div>
+									
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Username (User name)">Degree programme</label>  
+									  <div class="col-md-4">
+									 <div class="input-group">
+										   <div class="input-group-addon">
+											<i class="fa fa-book">
+											</i>
+										   </div>
+										   <input name="Username (User name)" type="text" placeholder="Degree programme" class="form-control input-md" style="border-bottom:2px solid #F37173;" required>
+										  </div>
+										</div>
+									</div>
+									
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Username (User name)">Batch</label>  
+									  <div class="col-md-4">
+									 <div class="input-group">
+										   <div class="input-group-addon">
+											<i class="fa fa-users">
+											</i>
+										   </div>
+										   <input name="Username (User name)" type="text" placeholder="batch" class="form-control input-md" style="border-bottom:2px solid #F37173;" required>
+										  </div>
+										</div>
+									</div>
+									
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Username (User name)">University ID number</label>  
+									  <div class="col-md-4">
+									 <div class="input-group">
+										   <div class="input-group-addon">
+											<i class="fa fa-id-card-o">
+											</i>
+										   </div>
+										   <input name="Username (User name)" type="text" placeholder="University ID" class="form-control input-md" style="border-bottom:2px solid #F37173;" required>
+										  </div>
+										</div>
+									</div>
+									
+
+									<!-- Text input-->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Date Of Birth">Date Of Birth</label>  
+									  <div class="col-md-4">
+
+									  <div class="input-group">
+										   <div class="input-group-addon">
+										 <i class="fa fa-birthday-cake"></i>
+
+										   </div>
+										   <input id="Date Of Birth" name="Date Of Birth" type="date" placeholder="Date Of Birth" class="form-control input-md" style="border-bottom:2px solid #F37173;" required>
+										  </div>
+
+
+									  </div>
+									</div>
+
+
+									<!-- Text input-->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Father">Father's name</label>  
+									  <div class="col-md-4">
+									  <div class="input-group">
+										   <div class="input-group-addon">
+										  <i class="fa fa-male" style="font-size: 20px;"></i>
+
+										   </div>
+										  <input id="Father" name="Father" type="text" placeholder="Father's name" class="form-control input-md" style="border-bottom:2px solid #F37173;" required>
+
+										  </div>
+
+									  </div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Mother">Mother's Name</label>  
+									  <div class="col-md-4">
+									  <div class="input-group">
+										   <div class="input-group-addon">
+										  <i class="fa fa-female" style="font-size: 20px;"></i>
+
+										   </div>
+									  <input id="Mother" name="Mother" type="text" placeholder="Mother's Name" class="form-control input-md" style="border-bottom:2px solid #F37173;" required>
+
+										  </div>
+
+									  </div>
+									</div>
+
+									<!-- Multiple Radios (inline) -->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Gender">Gender</label>
+									  <div class="col-md-4"> 
+										<label class="radio-inline" for="Gender-0">
+										  <input type="radio" name="Gender" id="Gender-0" value="1" checked="checked" required>
+										  Male
+										</label> 
+										<label class="radio-inline" for="Gender-1">
+										  <input type="radio" name="Gender" id="Gender-1" value="2" required>
+										  Female
+										</label> 
+										<label class="radio-inline" for="Gender-2">
+										  <input type="radio" name="Gender" id="Gender-2" value="3" required>
+										  Other
+										</label>
+									  </div>
+									</div>
+
+									<!-- Multiple Radios (inline) -->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="radios">Marital Status:</label>
+									  <div class="col-md-4"> 
+										<label class="radio-inline" for="radios-0">
+										  <input type="radio" name="radios" id="radios-0" value="1" checked="checked" required>
+										  Married
+										</label> 
+										<label class="radio-inline" for="radios-1">
+										  <input type="radio" name="radios" id="radios-1" value="2" required>
+										  Unmarried
+										</label>
+									  </div>
+									</div>
+
+									<!-- Text input-->
+									<!-- <div class="form-group">
+									  <label class="col-md-4 control-label" for="Temporary Address">Temporary Address</label>  
+									  <div class="col-md-4">
+
+									  <div class="input-group">
+										   <div class="input-group-addon">
+										 <i class="fa fa-home" style="font-size:20px;"></i>
+
+										   </div>
+									 <input id="Temporary Address" name="Temporary Address" type="text" placeholder="Temporary Address" class="form-control input-md">
+										  </div>
+
+
+									  </div>
+									</div>
+									 -->
+
+
+									<div class="form-group">
+									  <label class="col-md-4 control-label col-xs-12" for="Permanent Address">Permanent Address</label>  
+									  <div class="col-md-2  col-xs-4">
+									  <input id="Permanent Address" name="Permanent Address" type="text" placeholder="District" class="form-control input-md " required>
+									  </div>
+
+									  <div class="col-md-2 col-xs-4">
+
+									  <input id="Permanent Address" name="Permanent Address" type="text" placeholder="Area" class="form-control input-md " required>
+									  </div>
+
+
+									</div>
+
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Permanent Address"></label>  
+									  <div class="col-md-2  col-xs-4">
+									  <input id="Permanent Address" name="Permanent Address" type="text" placeholder="Street" class="form-control input-md " required> 
+
+									  </div>
+
+
+
+
+									</div>
+
+
+
+
+									<div class="form-group">
+									  <label class="col-md-4 control-label col-xs-12" for="Temporary Address">Temporary Address</label>  
+									  <div class="col-md-2  col-xs-4">
+									  <input id="Temporary Address" name="Temporary Address" type="text" placeholder="District" class="form-control input-md ">
+									  </div>
+
+									  <div class="col-md-2 col-xs-4">
+
+									  <input id="Temporary Address" name="Temporary Address" type="text" placeholder="Area" class="form-control input-md ">
+									  </div>
+
+
+									</div>
+
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Temporary Address"></label>  
+									  <div class="col-md-2  col-xs-4">
+									  <input id="Temporary Address" name="Temporary Address" type="text" placeholder="Street" class="form-control input-md ">
+
+									  </div>
+
+
+
+
+									</div>
+
+
+
+
+									<!-- Text input-->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Primary Occupation">Primary Occupation</label>  
+									  <div class="col-md-4">
+									  <div class="input-group">
+										   <div class="input-group-addon">
+										 <i class="fa fa-briefcase"></i>
+
+										   </div>
+										  <input id="Primary Occupation" name="Primary Occupation" type="text" placeholder="Primary Occupation" class="form-control input-md" style="border-bottom:2px solid #F37173;" required>
+										  </div>
+
+
+									  </div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Secondary Occupation (if any)">Secondary Occupation (if any)</label>  
+									  <div class="col-md-4">
+									  <div class="input-group">
+										   <div class="input-group-addon">
+										  <i class="fa fa-briefcase"></i>
+
+										   </div>
+										 <input id="Secondary Occupation (if any)" name="Secondary Occupation (if any)" type="text" placeholder="Secondary Occupation (if any)" class="form-control input-md" style="border-bottom:2px solid #F37173;">
+										  </div>
+
+
+									  </div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Skills">Skills</label>  
+									  <div class="col-md-4">
+									  <div class="input-group">
+										   <div class="input-group-addon">
+										 <i class="fa fa-graduation-cap"></i>
+
+										   </div>
+										 <input id="Skills" name="Skills" type="text" placeholder="Skills" class="form-control input-md" style="border-bottom:2px solid #F37173;">
+										  </div>
+
+
+									  </div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Phone number ">Phone number </label>  
+									  <div class="col-md-4">
+									  <div class="input-group">
+										   <div class="input-group-addon">
+										 <i class="fa fa-phone"></i>
+
+										   </div>
+										<input id="Phone number " name="Phone number " type="tel" placeholder="Primary Phone number (034-xx)" class="form-control input-md" style="border-bottom:2px solid #F37173;" required>
+
+										  </div>
+										  <div class="input-group othertop">
+										   <div class="input-group-addon">
+										 <i class="fa fa-mobile fa-1x" style="font-size: 20px;"></i>
+
+										   </div>
+										<input id="Phone number " name="Secondary Phone number " type="tel" placeholder=" Secondary Phone number(07x-xx)" class="form-control input-md"style="border-bottom:2px solid #F37173;" required>
+
+										  </div>
+
+									  </div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Email Address">Email Address</label>  
+									  <div class="col-md-4">
+									  <div class="input-group">
+										   <div class="input-group-addon">
+										 <i class="fa fa-envelope-o"></i>
+
+										   </div>
+										<input id="Email Address" name="Email Address" type="email" placeholder="Email Address (xx@xxx.com)" class="form-control input-md" style="border-bottom:2px solid #F37173;" required>
+
+										  </div>
+
+									  </div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Availability time">Availability time</label>  
+									  <div class="col-md-4">
+									  <div class="input-group">
+										   <div class="input-group-addon">
+										 <i class="fa fa-clock-o"></i>
+
+										   </div>
+										<input id="Availability time" name="Availability time" type="time" placeholder="Availability time" class="form-control input-md" >
+
+										  </div>
+
+
+									  </div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Available Service Area">Available Service Area</label>  
+									  <div class="col-md-4">
+									  <div class="input-group">
+										   <div class="input-group-addon">
+										 <i class="fa fa-street-view"></i>
+
+										   </div>
+									   <input id="Available Service Area" name="Available Service Area" type="text" placeholder="Available Service Area" class="form-control input-md" style="border-bottom:2px solid #F37173;">
+
+										  </div>
+
+
+									  </div>
+									</div>
+
+									<!-- Text input-->
+									<!-- Multiple Checkboxes -->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Languages Known">Languages Known</label>
+									  <div class="col-md-4">
+									  <div class="checkbox">
+										<label for="Languages Known-0">
+										  <input type="checkbox" name="Languages Known" id="Languages Known-0" value="1"  >
+										  Sinhala
+										</label>
+										</div>
+									  <div class="checkbox">
+										<label for="Languages Known-1">
+										  <input type="checkbox" name="Languages Known" id="Languages Known-1" value="2" >
+										  English
+										</label>
+										</div>
+									  <div class="checkbox">
+										<label for="Languages Known-2">
+										  <input type="checkbox" name="Languages Known" id="Languages Known-2" value="3">
+										  Tamil
+										</label>
+										</div>
+									  <div class="checkbox">
+										<label for="Languages Known-3">
+										  <input type="checkbox" name="Languages Known" id="Languages Known-3" value="4">
+										  Hindi
+										</label>
+										</div>
+
+									<div class="othertop">
+										<label for="Languages Known-4">
+
+
+
+										</label>
+
+										 <input type="input" name="LanguagesKnown" id="Languages Known-4"  placeholder="Other Language">
+										</div>
+
+									  </div>
+									</div>
+
+									<!-- Text input-->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="License No.">License No.</label>  
+									  <div class="col-md-4">
+									  <div class="input-group">
+										   <div class="input-group-addon">
+										 <i class="fa fa-sticky-note-o"></i>
+
+										   </div>
+									   <input id="License No." name="License No." type="text" placeholder="License No." class="form-control input-md" style="border-bottom:2px solid #F37173;">
+
+										  </div>
+
+
+									  </div>
+									</div>
+
+									<!-- Multiple Radios -->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Owns Vehicle">Owns Vehicle?</label>
+									  <div class="col-md-4">
+									  <div class="checkbox">
+										<label for="Owns Vehicle-0">
+										  <input type="checkbox" name="Owns Vehicle" id="Owns Vehicle-0" value="1">
+										  4 wheeler
+										</label>
+										</div>
+									  <div class="checkbox">
+										<label for="Owns Vehicle-1">
+										  <input type="checkbox" name="Owns Vehicle" id="Owns Vehicle-1" value="2">
+										 Bike
+										</label>
+										</div>
+									  <div class="checkbox">
+										<label for="Owns Vehicle-2">
+										  <input type="checkbox" name="Owns Vehicle" id="Owns Vehicle-2" value="3">
+										  Bicycle
+										</label>
+										</div>
+									  </div>
+									</div>
+
+
+									<!-- Text input-->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Working Experience (time period)">Working Experience (time period)</label>  
+									  <div class="col-md-4">
+									  <div class="input-group">
+										   <div class="input-group-addon">
+										 <i class="fa fa-clock-o"></i>
+
+										   </div>
+										<input id="Working Experience (time period)" name="Working Experience" type="number" placeholder="Enter time period " class="form-control input-md" style="border-bottom:2px solid #F37173;" required>
+
+
+										  </div>
+
+									  </div>
+									</div>
+
+									<!-- Textarea -->
+									<div class="form-group">
+									  <label class="col-md-4 control-label" for="Overview (max 200 words)">Overview (max 200 words)</label>
+									  <div class="col-md-4">                     
+										<textarea class="form-control" rows="10"  id="Overview (max 200 words)" name="Overview (max 200 words)" required>Overview</textarea>
+									  </div>
+									</div>
+
+
+									<div class="form-group">
+									  <label class="col-md-4 control-label" ></label>  
+									  <div class="col-md-4">
+									  <a href="404-boxed.html" class="btn btn-success"><span class="glyphicon glyphicon-thumbs-up" onClick="check_check()"></span> Submit</a>
+									  <a href="#" class="btn btn-danger" value=""><span class="glyphicon glyphicon-remove-sign"></span> Clear</a>
+
+									  </div>
+									</div>
+
+									</fieldset>
+									</form>
+									</div>
+									<div class="col-md-2 hidden-xs">
+										<script type="text/javascript">
+										
+												function readURL(input) {
+													if (input.files && input.files[0]) {
+														var reader = new FileReader();
+
+														reader.onload = function (e) {
+															$('#blah')
+																.attr('src', e.target.result)
+																.width(150)
+																.height(200);
+														};
+
+														reader.readAsDataURL(input.files[0]);
+													}
+												}
+										</script>
+										<script type="text/javascript">
+											function move() {
+												var elem = document.getElementById("myBar");   
+												var width = 1;
+												var id = setInterval(frame, 10);
+												function frame() {
+													if (width >= 100) {
+														clearInterval(id);
+													} else {
+														width++; 
+														elem.style.width = width + '%'; 
+													}
+												}
+											}
+										</script>
+									<img src="http://websamplenow.com/30/userprofile/images/avatar.jpg" class="img-responsive img-thumbnail " id="blah">
+									  </div>
+
+
+									</div>
+									   </div>
+
+
+								</div><!--/.health-section -->
+								
+								<div class="section technology-news">
+
+									
+								</div><!--/technology-news--> 
+								
+								<div class="section lifestyle-section">
+					
+								</div><!--/.lifestyle -->
+								
+								
+								<div class="section photo-gallery">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-1">
+
+					</div>				
+</div><!--/.section-->
+
+		
+		
+		<div class="footer-top">
+			<div class="container-fluid">
+				<ul class="list-inline social-icons text-center">
+					<li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i>Google Plus</a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i>Linkedin</a></li>
+					<li><a href="#"><i class="fa fa-pinterest"></i>Pinterest</a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i>Youtube</a></li>
+				</ul>
+			</div>
+		</div><!--/.footer-top-->
+	
+		<footer id="footer">
+			<div class="bottom-widgets">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="widget">
+								<h2>Categories</h2> 
+								<ul>
+									<li><a href="#">School of business</a></li>
+									<li><a href="#">School of computing</a></li>
+									<li><a href="#">Sports</a></li>
+									<li><a href="#">Meeting</a></li>
+									<li><a href="#">Entertainment</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Events</a></li>
+									<li><a href="#">NSBM life</a></li>
+									<li><a href="#">Gallary</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="widget">
+								<h2>Editions</h2> 
+								<ul>
+									<li><a href="#">English</a></li>
+									<li><a href="#">Sinhala</a></li>
+									<li><a href="#">Tamil</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="widget">
+								<h2>Popular Tags</h2> 
+								<ul>
+									<li><a href="#">Gallery</a></li>
+									<li><a href="#">Sports</a></li>
+									<li><a href="#">Party</a></li>
+									<li><a href="#">News</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Environment</a></li>
+									<li><a href="#">Business</a></li>
+									<li><a href="#">Programming</a></li>
+									<li><a href="#">Designing</a></li>
+									<li><a href="#">Manegment</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Brain computing</a></li>
+									<li><a href="#">UI/UX designing</a></li>
+									<li><a href="#">Mobile devolopment</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="widget">
+								<h2>Products</h2> 
+								<ul>
+									<li><a href="#">Ebook</a></li>
+									<li><a href="#">User guide</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container-fluid text-center">
+					<p>Copyright &copy; 2017,NSBM Alumini   Developed by <a href="http://themeregion.com/">HeliumX</a></p>
+				</div>
+			</div>		
+		</footer>	
+	</div><!--/#main-wrapper--> 
+</div>
+	
+		
+	<!--/#scripts--> 
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script> 
+    <script type="text/javascript" src="js/main.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <script>
+		var pass = document.getElementById("pass");
+		var lowercase_letter = document.getElementById("lowercase_letter");
+		var uppercase_letter = document.getElementById("uppercase_letter");
+		var number = document.getElementById("number");
+		var length = document.getElementById("input_length");
+
+
+		pass.onfocus = function() {
+			document.getElementById("show_show").style.display = "block";
+		}
+		pass.onblur = function() {
+			document.getElementById("show_show").style.display = "none";
+		}
+
+
+		pass.onkeyup = function() {
+
+		  var lowerCaseLetters = /[a-z]/g;
+		  if(pass.value.match(lowerCaseLetters)) {  
+			lowercase_letter.classList.remove("invalid");
+			lowercase_letter.classList.add("valid");
+		  } else {
+			lowercase_letter.classList.remove("valid");
+			lowercase_letter.classList.add("invalid");
+		  }
+
+
+		  var upperCaseLetters = /[A-Z]/g;
+		  if(pass.value.match(upperCaseLetters)) {  
+			uppercase_letter.classList.remove("invalid");
+			uppercase_letter.classList.add("valid");
+		  } else {
+			uppercase_letter.classList.remove("valid");
+			uppercase_letter.classList.add("invalid");
+		  }
+
+
+		  var numbers = /[0-9]/g;
+		  if(pass.value.match(numbers)) {  
+			number.classList.remove("invalid");
+			number.classList.add("valid");
+		  } else {
+			number.classList.remove("valid");
+			number.classList.add("invalid");
+		  }
+
+
+		  if(pass.value.length >= 8) {
+			length.classList.remove("invalid");
+			length.classList.add("valid");
+		  } else {
+			length.classList.remove("valid");
+			length.classList.add("invalid");
+		  }
+		}
+		</script>
+		
+		<script>
+
+				function check()
+				{
+
+					var pass1 = document.getElementById("pass").value;
+					var pass2 = document.getElementById("cpasswod").value;
+
+					
+
+					if(pass1 == "" && pass2 == "")
+					{
+						document.getElementById("write_write").innerHTML="<p style='color=red'>Password does not match</p>";
+						//document.getElementById('display').innerHTML="im in2";
+					}
+
+					if(pass1 == pass2)
+					{
+						document.getElementById("write_write").innerHTML="<p style='color=green'>Passwords are  matching</p>";
+						//document.getElementById('display').innerHTML="im in3";
+					}
+					
+					if(pass1 != pass2)
+					{
+						document.getElementById("write_write").innerHTML="<p style='color=red'>Password does not match</p>";
+						//document.getElementById('display').innerHTML="im in3";
+					}
+
+				}
+	
+		</script>
+		<script type="text/javascript">
+			
+			function check_check()
+			{
+				window.location = "404-boxed.html";
+			}
+			
+		</script>
+	
+</body>
+
+</html>

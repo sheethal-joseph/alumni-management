@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <title></title>
+	
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/calender.css" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">	
+	
+	<link href="https://fonts.googleapis.com/css?family=Signika+Negative:400,300,600,700" rel="stylesheet" type="text/css">
+	
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    
+    <style type="text/css">
+	
+		body
+		{
+			overflow: auto;
+		}
+		
+		.othertop
+		{
+			margin-top:5px;
+		}
+		
+		.twPc-div {
+			background: #fff none repeat scroll 0 0;
+			border: 1px solid #e1e8ed;
+			border-radius: 6px;
+			height:auto;
+			max-width: 100%; // orginal twitter width: 290px;
+		}
+		.twPc-bg {
+			background-image: url("https://pbs.twimg.com/profile_banners/50988711/1384539792/600x200");
+			background-position: 0 50%;
+			background-size: 100% auto;
+			border-bottom: 1px solid #e1e8ed;
+			border-radius: 4px 4px 0 0;
+			height: 200px;
+			width: 100%;
+		}
+		.twPc-block {
+			display: block !important;
+		}
+		.twPc-button {
+			margin: -35px -10px 0;
+			text-align: right;
+			width: 100%;
+		}
+		.twPc-avatarLink {
+			background-color: #fff;
+			border-radius: 6px;
+			display: inline-block !important;
+			float: left;
+			margin: -30px 5px 0 8px;
+			max-width: 100%;
+			padding: 1px;
+			vertical-align: bottom;
+		}
+		.twPc-avatarImg {
+			border: 2px solid #fff;
+			border-radius: 7px;
+			box-sizing: border-box;
+			color: #fff;
+			height: 72px;
+			width: 72px;
+		}
+		.twPc-divUser {
+			margin: 5px 0 0;
+		}
+		.twPc-divName {
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 21px;
+		}
+		.twPc-divName a {
+			color: inherit !important;
+		}
+		.twPc-divStats {
+			margin-left: 11px;
+			padding: 10px 0;
+		}
+		.twPc-Arrange {
+			box-sizing: border-box;
+			display: table;
+			margin: 0;
+			min-width: 100%;
+			padding: 0;
+			table-layout: auto;
+		}
+		ul.twPc-Arrange {
+			list-style: outside none none;
+			margin: 0;
+			padding: 0;
+		}
+		.twPc-ArrangeSizeFit {
+			display: table-cell;
+			padding: 0;
+			vertical-align: top;
+		}
+		.twPc-ArrangeSizeFit a:hover {
+			text-decoration: none;
+		}
+		.twPc-StatValue {
+			display: block;
+			font-size: 18px;
+			font-weight: 500;
+			transition: color 0.15s ease-in-out 0s;
+		}
+		.twPc-StatLabel {
+			color: #8899a6;
+			font-size: 10px;
+			letter-spacing: 0.02em;
+			overflow: hidden;
+			text-transform: uppercase;
+			transition: color 0.15s ease-in-out 0s;
+		}
+		.head_style,.para_style
+		{
+			display: inline;
+			padding: 5%;
+		}
+		.divpad
+		{
+		 padding: 5%;
+		 margin: 2%;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="main-wrapper">
+		<header id="navigation">
+			<div class="navbar" role="banner">	
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						
+						<a class="navbar-brand" href="index.html">
+							<img class="main-logo img-responsive" src="images/others/rsz_img1.png" alt="">
+						</a>
+					</div> 
+					<nav id="mainmenu" class="navbar-left collapse navbar-collapse"> 
+						<a class="secondary-logo" href="index.html">
+							<img class="img-responsive" src="images/others/rsz_img1.png" alt="">
+						</a>
+						<ul class="nav navbar-nav">                       
+							<li class="dropdown"><a href="home.html">Home </a>
+							</li>
+							<li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="about_us.html">About us</a></li>
+									<li><a href="contact_us.html">Contact us</a></li>
+									<li><a href="listing.html">Alumini benifits</a></li>
+									<li><a href="404.html">Meeting reports</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="events_show.html">Upcoming events <span class="badge">Events</span></a></li>
+									<li><a href="view news.html">Latest news<span class="badge">News</span></a></li>
+								</ul>
+							</li>
+							<li class="dropdown mega-dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Mega Menu <span class="caret"></span></a>
+								<div class="dropdown-menu mega-menu">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-sm-3">
+												<div class="post medium-post">
+													<div class="entry-header">
+														<div class="entry-thumbnail">
+															<a href="news-details.html"><img class="img-responsive" src="images/gallery/C8U9z98UwAAGxt6.jpg" alt="" /></a>
+														</div>
+													</div>
+													<div class="post-content">								
+														<div class="entry-meta">
+															<ul class="list-inline">
+																<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Dec 10, 2017 </a></li>
+
+															</ul>
+														</div>
+														<h2 class="entry-title">
+															<a href="news-details.html">Life at NSBM,
+															NSBM green University is renowned for its world-class academic offerings.</a>
+														</h2>
+													</div>
+												</div><!--/post--> 
+											</div>
+											<div class="col-sm-3">
+												<div class="post medium-post">
+													<div class="entry-header">
+														<div class="entry-thumbnail">
+															<a href="news-details.html"><img class="img-responsive" src="images/gallery/217056.jpg" alt="" /></a>
+														</div>
+													</div>
+													<div class="post-content">								
+														<div class="entry-meta">
+															<ul class="list-inline">
+																<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Dec 18, 2017 </a></li>
+
+															</ul>
+														</div>
+														<h2 class="entry-title">
+															<a href="news-details.html">National School of Business Management, (NSBM) Graduation ceremony</a>
+														</h2>
+													</div>
+												</div><!--/post--> 
+											</div>
+											<div class="col-sm-3">
+												<div class="post medium-post">
+													<div class="entry-header">
+														<div class="entry-thumbnail">
+															<a href="news-details.html"><img class="img-responsive" src="images/gallery/398638.jpg" alt="" /></a>
+														</div>
+													</div>
+													<div class="post-content">								
+														<div class="entry-meta">
+															<ul class="list-inline">
+																<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Dec 19, 2017 </a></li>
+
+															</ul>
+														</div>
+														<h2 class="entry-title">
+															<a href="news-details.html">NSBM students decorated the campus premises for a deco competition celebrating Christmas 2017</a>
+														</h2>
+													</div>
+												</div><!--/post--> 
+											</div>
+											<div class="col-sm-3">
+												<div class="post medium-post">
+													<div class="entry-header">
+														<div class="entry-thumbnail">
+															<a href="news-details.html"><img class="img-responsive" src="images/gallery/383610.jpg" alt="" /></a>
+														</div>
+													</div>
+													<div class="post-content">								
+														<div class="entry-meta">
+															<ul class="list-inline">
+																<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Dec 13, 2017 </a></li>
+
+															</ul>
+														</div>
+														<h2 class="entry-title">
+															<a href="news-details.html">Victoria University students at NSBM gets a warm welcome</a>
+														</h2>
+													</div>
+												</div><!--/post--> 
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li><a href="about_us.html">About us</a></li>
+							<li><a href="contact_us.html">Contact us</a></li>
+							<li><a href="#">Achivements</a></li>
+							<li><a href="events_show.html">Events</a></li>
+						</ul> 					
+					</nav>
+					
+					<div class="searchNlogin">
+						<ul>
+						
+							<li class="search-icon"><i class="fa fa-search"></i></li>
+							<li><p style="color: #ed1c24">logged in as lakithmuthugala</p></li>
+
+						</ul>
+						<div class="search">
+							<form role="form">
+								<input type="text" class="search-form" autocomplete="off" placeholder="Type & Press Enter">
+							</form>
+						</div> <!--/.search--> 
+					</div><!--.searchNlogin -->
+				</div>	
+			</div>
+		</header><!--/#navigation--> 
+		
+		<div class="container-fluid">			
+				<div class="section">
+				<div class="row" style="margin-top: 2%;">	
+				<div class="col-md-1"></div>
+				<div class="col-md-10" style="width:85%;">
+				<div class="container-fluid" >
+				<div class="row">
+				<div class="twPc-div" style="width: 200%;">
+					
+
+					
+					<iframe src="blog_new_content.html" width="100%;" style="height: 590px;"></iframe>
+
+					</div>
+				</div>
+				<!-- code end -->
+				</div>
+				</div>
+				
+				
+				</div>
+				</div> <!--/.section-->
+
+		
+		
+		<div class="footer-top">
+			<div class="container-fluid">
+				<ul class="list-inline social-icons text-center">
+					<li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i>Google Plus</a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i>Linkedin</a></li>
+					<li><a href="#"><i class="fa fa-pinterest"></i>Pinterest</a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i>Youtube</a></li>
+				</ul>
+			</div>
+		</div><!--/.footer-top-->
+	
+		<footer id="footer">
+			<div class="bottom-widgets">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="widget">
+								<h2>Categories</h2> 
+								<ul>
+									<li><a href="#">School of business</a></li>
+									<li><a href="#">School of computing</a></li>
+									<li><a href="#">Sports</a></li>
+									<li><a href="#">Meeting</a></li>
+									<li><a href="#">Entertainment</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Events</a></li>
+									<li><a href="#">NSBM life</a></li>
+									<li><a href="#">Gallary</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="widget">
+								<h2>Editions</h2> 
+								<ul>
+									<li><a href="#">English</a></li>
+									<li><a href="#">Sinhala</a></li>
+									<li><a href="#">Tamil</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="widget">
+								<h2>Popular Tags</h2> 
+								<ul>
+									<li><a href="#">Gallery</a></li>
+									<li><a href="#">Sports</a></li>
+									<li><a href="#">Party</a></li>
+									<li><a href="#">News</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Environment</a></li>
+									<li><a href="#">Business</a></li>
+									<li><a href="#">Programming</a></li>
+									<li><a href="#">Designing</a></li>
+									<li><a href="#">Manegment</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Brain computing</a></li>
+									<li><a href="#">UI/UX designing</a></li>
+									<li><a href="#">Mobile devolopment</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="widget">
+								<h2>Products</h2> 
+								<ul>
+									<li><a href="#">Ebook</a></li>
+									<li><a href="#">User guide</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container-fluid text-center">
+					<p>Copyright &copy; 2017,NSBM Alumini   Developed by <a href="http://themeregion.com/">HeliumX</a></p>
+				</div>
+			</div>		
+		</footer>	
+	</div><!--/#main-wrapper--> 
+</div>
+	
+		
+	<!--/#scripts--> 
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script> 
+    <script type="text/javascript" src="js/main.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    
+	
+</body>
+</html>

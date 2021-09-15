@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+	<meta name="author" content="">
+	
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+    <title></title>
+	
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/calender.css" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">	
+	
+	<link href="https://fonts.googleapis.com/css?family=Signika+Negative:400,300,600,700" rel="stylesheet" type="text/css">
+	
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    
+	<style type="text/css">
+	
+
+	#custom-search-inputfield {
+        margin:0;
+        margin-top: 10px;
+        padding: 0;
+		margin-left: 550px;
+    }	   
+
+#custom-search-input {
+        margin:0;
+        margin-top: 10px;
+        padding: 0;
+		margin-left: 425px;
+    }
+ 
+    #custom-search-input .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    #custom-search-input button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color:#D9230F;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+	
+		body
+		{
+			overflow: auto;
+		}
+		
+		.othertop
+		{
+			margin-top:5px;
+		}
+		.card_new
+		{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			max-width: 250px;
+			margin: 0%;
+			text-align: center;
+		}
+		.edit_lets_eddit
+		{
+			 border: none;
+			 outline: 0;
+			 display: inline-block;
+			 padding: 2px;
+			 color: white;
+			 background-color: #ed1c24;
+			 text-align: center;
+			 cursor: pointer;
+			 width: 100%;
+			 font-size: 18px;
+		}
+		
+	
+	</style>
+</head>
+<body>
+	<div id="main-wrapper">
+		<header id="navigation">
+			<div class="navbar" role="banner">	
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						
+						<a class="navbar-brand" href="index.html">
+							<img class="main-logo img-responsive" src="images/others/rsz_img1.png" alt="">
+						</a>
+					</div> 
+					<nav id="mainmenu" class="navbar-left collapse navbar-collapse"> 
+						<a class="secondary-logo" href="index.html">
+							<img class="img-responsive" src="images/others/rsz_img1.png" alt="">
+						</a>
+						<ul class="nav navbar-nav">                       
+							<li class="dropdown"><a href="home.html"> Home </a>
+							</li>
+							<li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="about_us.html">About us</a></li>
+									<li><a href="contact_us.html">Contact us</a></li>
+									<li><a href="listing.html">Alumini benifits</a></li>
+									<li><a href="404.html">Meeting reports</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="events_show.html">Upcoming events <span class="badge">Events</span></a></li>
+									<li><a href="view news.html">Latest news<span class="badge">News</span></a></li>
+								</ul>
+							</li>
+							<li class="dropdown mega-dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Mega Menu <span class="caret"></span></a>
+								<div class="dropdown-menu mega-menu">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-sm-3">
+												<div class="post medium-post">
+													<div class="entry-header">
+														<div class="entry-thumbnail">
+															<a href="news-details.html"><img class="img-responsive" src="images/gallery/C8U9z98UwAAGxt6.jpg" alt="" /></a>
+														</div>
+													</div>
+													<div class="post-content">								
+														<div class="entry-meta">
+															<ul class="list-inline">
+																<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Dec 10, 2017 </a></li>
+
+															</ul>
+														</div>
+														<h2 class="entry-title">
+															<a href="news-details.html">Life at NSBM,
+															NSBM green University is renowned for its world-class academic offerings.</a>
+														</h2>
+													</div>
+												</div><!--/post--> 
+											</div>
+											<div class="col-sm-3">
+												<div class="post medium-post">
+													<div class="entry-header">
+														<div class="entry-thumbnail">
+															<a href="news-details.html"><img class="img-responsive" src="images/gallery/217056.jpg" alt="" /></a>
+														</div>
+													</div>
+													<div class="post-content">								
+														<div class="entry-meta">
+															<ul class="list-inline">
+																<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Dec 18, 2017 </a></li>
+
+															</ul>
+														</div>
+														<h2 class="entry-title">
+															<a href="news-details.html">National School of Business Management, (NSBM) Graduation ceremony</a>
+														</h2>
+													</div>
+												</div><!--/post--> 
+											</div>
+											<div class="col-sm-3">
+												<div class="post medium-post">
+													<div class="entry-header">
+														<div class="entry-thumbnail">
+															<a href="news-details.html"><img class="img-responsive" src="images/gallery/398638.jpg" alt="" /></a>
+														</div>
+													</div>
+													<div class="post-content">								
+
+														<div class="entry-meta">
+															<ul class="list-inline">
+																<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Dec 19, 2017 </a></li>
+
+															</ul>
+														</div>
+														<h2 class="entry-title">
+															<a href="news-details.html">NSBM students decorated the campus premises for a deco competition celebrating Christmas 2017</a>
+														</h2>
+													</div>
+												</div><!--/post--> 
+											</div>
+											<div class="col-sm-3">
+												<div class="post medium-post">
+													<div class="entry-header">
+														<div class="entry-thumbnail">
+															<a href="news-details.html"><img class="img-responsive" src="images/gallery/383610.jpg" alt="" /></a>
+														</div>
+													</div>
+													<div class="post-content">								
+														<div class="entry-meta">
+															<ul class="list-inline">
+																<li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Dec 13, 2017 </a></li>
+
+															</ul>
+														</div>
+														<h2 class="entry-title">
+															<a href="news-details.html">Victoria University students at NSBM gets a warm welcome</a>
+														</h2>
+													</div>
+												</div><!--/post--> 
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li><a href="about_us.html">About us</a></li>
+							<li><a href="contact_us.html">Contact us</a></li>
+							<li><a href="#">Achivements</a></li>
+							<li><a href="events_show.html">Events</a></li>
+						</ul> 					
+					</nav>
+					
+					<div class="searchNlogin">
+						<ul>
+							<li class="search-icon"><i class="fa fa-search"></i></li>
+							<li><a href="add_users.html"><i class="fa fa-user"></i></a></li>
+							<li class="dropdown user-panel"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i></a></a>
+								<div class="dropdown-menu top-user-section">
+									<div class="top-user-form">
+										<form id="top-login" role="form">
+											<div class="input-group" id="top-login-username">
+												<span class="input-group-addon"><img src="images/others/user-icon.png" alt="" /></span>
+												<input type="text" class="form-control" placeholder="Username" required="">
+											</div>
+											<div class="input-group" id="top-login-password">
+												<span class="input-group-addon"><img src="images/others/password-icon.png" alt="" /></span>
+												<input type="password" class="form-control" placeholder="Password" required="">
+											</div>
+											<div>
+												<p class="reset-user">Forgot <a href="#">Password/Username?</a></p>
+												<button class="btn btn-danger" type="submit">Login</button>
+											</div>
+										</form>
+									</div>
+									<div class="create-account">
+										<a href="#">Create a New Account</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="search">
+							<form role="form">
+								<input type="text" class="search-form" autocomplete="off" placeholder="Type & Press Enter">
+							</form>
+						</div> <!--/.search--> 
+					</div><!--.searchNlogin -->
+				</div>	
+			</div>
+		</header><!--/#navigation--> 
+	<br>
+		<div class="container">
+			<div class="row">
+				
+				             <div id="custom-search-input">
+									<div class="input-group col-md-9">
+										<input type="text" class="  search-query form-control" placeholder="Search" />
+										<span class="input-group-btn">
+											<button class="btn btn-danger" type="button">
+												<span class=" glyphicon glyphicon-search"></span>
+											</button>
+										</span>
+									</div>
+								</div>
+			</div>
+		</div>
+
+
+		<div class="container-fluid">			
+				<div class="section">
+				<div class="row" style="margin-top: 2%;">	
+					<div class="col-md-1"></div>
+					
+					<div class="col-md-2" >
+						
+				<div class="card card_new" style="background-color:#FFFFFF">
+                <img src="images/gallery/430748_290529597730486_1523169558_n.jpg" alt="John" style="width:100%">
+                <h2>Sachin nanayakkara</h2>
+                <p class="title">CEO & Founder</p>
+                <p>HeliumX</p>
+                <div style="margin:0px;">
+                  <a href="#"><i class="fa fa-dribbble"></i></a> 
+                  <a href="#"><i class="fa fa-twitter"></i></a>  
+                  <a href="#"><i class="fa fa-linkedin"></i></a>  
+                  <a href="#"><i class="fa fa-facebook"></i></a> 
+               </div>
+               <p><a href="blog2.html"><button class="edit_lets_eddit">Contact</button></a></p>
+              </div>
+						
+					</div>
+										
+					<div class="col-md-6" ></div>
+					
+					<div class="name" style="background-color: #FFFFFF; width: 70%; margin-left: 24%; height:340px" >
+					<div class="post-content">								
+						<div class="entry-meta" style="margin-top:-2.5%;">
+						</div>
+						<h2 class="entry-title">
+							<a href="news-details.html">Basic information.</a>
+						</h2>
+						<div class="entry-content">
+						<p>
+							Full Name	Sachin nanayakkara<br/>
+							Degree program	Plymouth softwear engineering<br/>
+							Batch	14.1<br/>
+							Birthday	April 25, 1995<br/>
+						</p>
+						</div>
+						
+						<h2 class="entry-title">
+							<a href="news-details.html">Job discription.</a>
+						</h2>
+						<div class="entry-content">
+						<p>Co-founder At heliumX tecnologies</p>
+						
+						
+						</div><h2 class="entry-title">
+							<a href="news-details.html">Acerdamic details.</a>
+						</h2>
+						<div class="entry-content">
+						<p>BSc Softwear Engineering (Plumouth University)</p>
+						</div>
+					</div>
+						
+					<div class="col-md-1"></div> 				
+											
+					</div>
+			</div>
+			
+		
+
+							<div class="row" style="margin-top: 2%;">	
+					<div class="col-md-1"></div>
+					
+					<div class="col-md-2" >
+						
+				<div class="card card_new" style="background-color:#FFFFFF">
+                <img src="images/gallery/photo.jpg" alt="John" style="width:100%">
+                <h2>Lakith Muthugala</h2>
+                <p class="title">CEO & Founder</p>
+                <p>HeliumX</p>
+                <div style="margin:0px;">
+                  <a href="#"><i class="fa fa-dribbble"></i></a> 
+                  <a href="#"><i class="fa fa-twitter"></i></a>  
+                  <a href="#"><i class="fa fa-linkedin"></i></a>  
+                  <a href="#"><i class="fa fa-facebook"></i></a> 
+               </div>
+               <p><a href="blog2.html"><button class="edit_lets_eddit">Contact</button></a></p>
+              </div>
+						
+					</div>
+										
+					<div class="col-md-6" ></div>
+					
+					<div class="name" style="background-color: #FFFFFF; width: 70%; margin-left: 24%; height:365px" >
+					<div class="post-content">								
+						<div class="entry-meta" style="margin-top:-2.5%;">
+						</div>
+						<h2 class="entry-title">
+							<a href="news-details.html">Basic information.</a>
+						</h2>
+						<div class="entry-content">
+						<p>
+							Full Name :	Lakith Muthugala<br/>
+							Degree program :	Plymouth softwear engineering<br/>
+							Batch:	14.1<br/>
+							Birthday :	April 25, 1995<br/>
+						</p>
+						</div>
+						
+						<h2 class="entry-title">
+							<a href="news-details.html">Job discription.</a>
+						</h2>
+						<div class="entry-content">
+						<p>Co-founder At heliumX tecnologies</p>
+						
+						
+						</div><h2 class="entry-title">
+							<a href="news-details.html">Acerdamic details.</a>
+						</h2>
+						<div class="entry-content">
+						<p>BSc Softwear Engineering (Plumouth University)</p>
+						</div>
+					</div>
+						
+					<div class="col-md-1"></div> 				
+											
+					</div>
+			</div>
+			
+							<div class="row" style="margin-top: 2%;">	
+					<div class="col-md-1"></div>
+					
+					<div class="col-md-2" >
+						
+				<div class="card card_new" style="background-color:#FFFFFF">
+                <img src="images/gallery/22528493_912435605580692_2013609982816669604_n.jpg" alt="John" style="width:100%">
+                <h2>Chalana Kalpitha</h2>
+                <p class="title">IT Manager</p>
+                <p>HeliumX</p>
+                <div style="margin:0px;">
+                  <a href="#"><i class="fa fa-dribbble"></i></a> 
+                  <a href="#"><i class="fa fa-twitter"></i></a>  
+                  <a href="#"><i class="fa fa-linkedin"></i></a>  
+                  <a href="#"><i class="fa fa-facebook"></i></a> 
+               </div>
+               <p><a href="blog2.html"><button class="edit_lets_eddit">Contact</button></a></p>
+              </div>
+						
+					</div>
+										
+					<div class="col-md-6" ></div>
+					
+					<div class="name" style="background-color: #FFFFFF; width: 70%; margin-left: 24%; height:365px" >
+					<div class="post-content">								
+						<div class="entry-meta" style="margin-top:-2.5%;">
+						</div>
+						<h2 class="entry-title">
+							<a href="news-details.html">Basic information.</a>
+						</h2>
+						<div class="entry-content">
+						<p>
+							Full Name	Chalana Kalpitha<br/>
+							Degree program	Plymouth softwear engineering<br/>
+							Batch	14.1<br/>
+							Birthday	April 25, 1995<br/>
+						</p>
+						</div>
+						
+						<h2 class="entry-title">
+							<a href="news-details.html">Job discription.</a>
+						</h2>
+						<div class="entry-content">
+						<p>IT Manager At heliumX tecnologies</p>
+						
+						
+						</div><h2 class="entry-title">
+							<a href="news-details.html">Acerdamic details.</a>
+						</h2>
+						<div class="entry-content">
+						<p>BSc Softwear Engineering (Plumouth University)</p>
+						</div>
+					</div>
+						
+					<div class="col-md-1"></div> 				
+											
+					</div>
+			</div>
+			
+							<div class="row" style="margin-top: 2%;">	
+					<div class="col-md-1"></div>
+					
+					<div class="col-md-2" >
+						
+				<div class="card card_new" style="background-color:#FFFFFF">
+                <img src="images/gallery/20914357_1714082472230215_8486671874618753082_n.jpg" alt="Hansi" style="width:100%">
+                <h2>Hansi Yapa</h2>
+                <p class="title">Manager</p>
+                <p>Seylan bank</p>
+                <div style="margin:0px;">
+                  <a href="#"><i class="fa fa-dribbble"></i></a> 
+                  <a href="#"><i class="fa fa-twitter"></i></a>  
+                  <a href="#"><i class="fa fa-linkedin"></i></a>  
+                  <a href="#"><i class="fa fa-facebook"></i></a> 
+               </div>
+               <p><a href="blog2.html"><button class="edit_lets_eddit">Contact</button></a></p>
+              </div>
+						
+					</div>
+										
+					<div class="col-md-6" ></div>
+					
+					<div class="name" style="background-color: #FFFFFF; width: 70%; margin-left: 24%; height:365px" >
+					<div class="post-content">								
+						<div class="entry-meta" style="margin-top:-2.5%;">
+						</div>
+						<h2 class="entry-title">
+							<a href="news-details.html">Basic information.</a>
+						</h2>
+						<div class="entry-content">
+						<p>
+							Full Name	Hansi yapa<br/>
+							Degree program	Plymouth HR manegement<br/>
+							Batch	14.1<br/>
+							Birthday	Dec 09, 1995<br/>
+						</p>
+						</div>
+						
+						<h2 class="entry-title">
+							<a href="news-details.html">Job discription.</a>
+						</h2>
+						<div class="entry-content">
+						<p>Banking Manager At Seylan bank</p>
+						
+						
+						</div><h2 class="entry-title">
+							<a href="news-details.html">Acerdamic details.</a>
+						</h2>
+						<div class="entry-content">
+						<p>BSc Softwear Engineering (Plumouth University)</p>
+						</div>
+					</div>
+						
+						
+					<div class="col-md-1"></div> 				
+											
+					</div>
+			</div>
+			<div id="custom-search-inputfield">
+			<nav aria-label="Page navigation">
+				<ul class="pagination">
+				  <li>
+					<a href="#" aria-label="Previous">
+					  <span aria-hidden="true">&laquo;</span>
+					</a>
+				  </li>
+				  <li><a href="#">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">5</a></li>
+				  <li>
+					<a href="#" aria-label="Next">
+					  <span aria-hidden="true">&raquo;</span>
+					</a>
+				  </li>
+				</ul>
+			  </nav>
+		 </div>
+
+		<div class="footer-top">
+			<div class="container-fluid">
+				<ul class="list-inline social-icons text-center">
+					<li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i>Google Plus</a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i>Linkedin</a></li>
+					<li><a href="#"><i class="fa fa-pinterest"></i>Pinterest</a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i>Youtube</a></li>
+				</ul>
+			</div>
+		</div><!--/.footer-top-->
+	
+		<footer id="footer">
+			<div class="bottom-widgets">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="widget">
+								<h2>Categories</h2> 
+								<ul>
+									<li><a href="#">School of business</a></li>
+									<li><a href="#">School of computing</a></li>
+									<li><a href="#">Sports</a></li>
+									<li><a href="#">Meeting</a></li>
+									<li><a href="#">Entertainment</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Events</a></li>
+									<li><a href="#">NSBM life</a></li>
+									<li><a href="#">Gallary</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="widget">
+								<h2>Editions</h2> 
+								<ul>
+									<li><a href="#">English</a></li>
+									<li><a href="#">Sinhala</a></li>
+									<li><a href="#">Tamil</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="widget">
+								<h2>Popular Tags</h2> 
+								<ul>
+									<li><a href="#">Gallery</a></li>
+									<li><a href="#">Sports</a></li>
+									<li><a href="#">Party</a></li>
+									<li><a href="#">News</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Environment</a></li>
+									<li><a href="#">Business</a></li>
+									<li><a href="#">Programming</a></li>
+									<li><a href="#">Designing</a></li>
+									<li><a href="#">Manegment</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Brain computing</a></li>
+									<li><a href="#">UI/UX designing</a></li>
+									<li><a href="#">Mobile devolopment</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="widget">
+								<h2>Products</h2> 
+								<ul>
+									<li><a href="#">Ebook</a></li>
+									<li><a href="#">User guide</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container-fluid text-center">
+					<p>Copyright &copy; 2017,NSBM Alumini   Developed by <a href="http://themeregion.com/">HeliumX</a></p>
+				</div>
+			</div>		
+		</footer>	
+	</div><!--/#main-wrapper--> 
+</div>
+	
+
+	<!--/#scripts--> 
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script> 
+    <script type="text/javascript" src="js/main.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    
+	
+</body>
+</html>
